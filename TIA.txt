@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TIA 基地周邊公共運輸站點分析</title>
+</head>
+<body>
+  <form method="post">
+    <h1> TIA 基地周邊公共運輸站點分析 </h1>  
+    <div>
+      <label for="project_labe", style="position:relative;vertical-align: middle;width:250px;height:30px;font-family:Microsoft JhengHei; font-size:20px; display: inline-block">專案名稱</label> 
+      <input type="text", id="project_labe", name="project_name", style="width:150px;height:22px;font-family:Arial;font-size:12px;padding:0;border:1px solid #696969; display: inline-block" required>
+     </div>
+    <div>
+      <label for="base1_label", style="position:relative;vertical-align: middle;width:250px;height:30px;font-family:Microsoft JhengHei; font-size:20px; display: inline-block">基地1名稱</label>
+       <input type="text", id="base1_label", name="base1_name", style="width:150px;height:22px;font-family:Arial;font-size:12px;padding:0;border:1px solid #696969; display: inline-block" required>
+    </div>
+    <div>
+      <label for="base1_position_label", style="position:relative;vertical-align: middle;width:250px;height:30px;font-family:Microsoft JhengHei; font-size:20px; display: inline-block">基地1位置(經緯度)</label>
+       <input type="text", id="base1_position_label", name="base1_position", style="width:150px;height:22px;font-family:Arial;font-size:12px;padding:0;border:1px solid #696969; display: inline-block" required>
+    </div>
+    <div>
+      <label for="base1_range_label", style="position:relative;vertical-align: middle;width:250px;height:30px;font-family:Microsoft JhengHei; font-size:20px; display: inline-block">基地1分析範圍(m)</label>
+       <input type="text", id="base1_range_label", name="base1_range", style="width:150px;height:22px;font-family:Arial;font-size:12px;padding:0;border:1px solid #696969; display: inline-block" required>
+     </div>
+    <div>
+      <label for="base2_label", style="position:relative;vertical-align: middle;width:250px;height:30px;font-family:Microsoft JhengHei; font-size:20px; display: inline-block">基地2名稱</label>
+       <input type="text", id="base2_label", name="base2_name", style="width:150px;height:22px;font-family:Arial;font-size:12px;padding:0;border:1px solid #696969; display: inline-block">
+    </div>
+    <div>
+      <label for="base2_position_label", style="position:relative;vertical-align: middle;width:250px;height:30px;font-family:Microsoft JhengHei; font-size:20px; display: inline-block">基地2位置(經緯度)</label>
+       <input type="text", id="base2_position_label", name="base2_position", style="width:150px;height:22px;font-family:Arial;font-size:12px;padding:0;border:1px solid #696969; display: inline-block">
+    </div>
+    <div>
+      <label for="base2_range_label", style="position:relative;vertical-align: middle;width:250px;height:30px;font-family:Microsoft JhengHei; font-size:20px; display: inline-block">基地2分析範圍(m)</label>
+       <input type="text", id="base2_range_label", name="base2_range", style="width:150px;height:22px;font-family:Arial;font-size:12px;padding:0;border:1px solid #696969; display: inline-block">
+    </div>
+    <fieldset>
+      <legend> 公共運具選擇</legend>
+      <ul>
+      <input type="checkbox", id="modal", name="InnerCity_Bus",value = '市區公車'>市區公車
+      <input type="checkbox", id="modal", name="InterCity_Bus",value = '公路客運'>公路客運
+      </ul>
+      <ul>
+        <input type="checkbox", id="modal", name="Bike",value = '自行車'>自行車
+      </ul>
+      <ul>
+        <input type="checkbox", id="modal", name="Parking_Outside",value = '路外停車'>路外停車
+        <input type="checkbox", id="modal", name="Parking_Roadside",value = '路邊停車'>路邊停車
+      </ul>
+      <ul>
+        <input type="checkbox", id="modal", name="THSR",value = '臺灣高鐵'>臺灣高鐵
+        <input type="checkbox", id="modal", name="TRA",value = '臺灣鐵路'>臺灣鐵路
+      </ul>
+      <ul>
+        <input type="checkbox", id="modal", name="TRTC",value = '臺北捷運'>臺北捷運
+        <input type="checkbox", id="modal", name="TYMC",value = '桃園捷運'>桃園捷運
+      </ul>
+      <ul>
+        <input type="checkbox", id="modal", name="KRTC",value = '高雄捷運'>高雄捷運
+        <input type="checkbox", id="modal", name="KLRT",value = '高雄輕軌'>高雄輕軌
+      </ul>
+      <ul>
+        <input type="checkbox", id="modal", name="NTDLRT",value = '淡海輕軌'>淡海輕軌
+        <input type="checkbox", id="modal", name="TRTCMG",value = '貓空纜車'>貓空纜車
+      </ul>
+    </fieldset>
+    <div>
+      <label for="sidewalk_label", style="position:relative;vertical-align: middle;width:250px;height:30px;font-family:Microsoft JhengHei; font-size:20px; display: inline-block">人行道資訊</label>
+       <input type="radio", id="sidewalk_label", name="sidewalk",value = 'Yes'>Yes
+      <input type="radio", id="sidewalk_label", name="sidewalk",value = 'No'>No
+    </div>
+  <input type="submit", style="position:relative;vertical-align: middle;width:100px;height:30px;font-family:Microsoft JhengHei; font-size:20px; display: inline-block", value = '分析開始'>
+</body>
+</html>
